@@ -246,6 +246,7 @@ class Dashboard extends Admin_Controller
 
     public function index($action = NULL)
     {
+        echo "<pre>"; print_r($action); die;
         $data['title'] = config_item('company_name');
         $data['page'] = lang('dashboard');
 
