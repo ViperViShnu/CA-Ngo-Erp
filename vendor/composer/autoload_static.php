@@ -24,6 +24,7 @@ class ComposerStaticInit97ffcc9890b434282063ca1ad3228de7
         ),
         'C' => 
         array (
+            'Composer\\Pcre\\' => 14,
             'Complex\\' => 8,
         ),
     );
@@ -54,19 +55,13 @@ class ComposerStaticInit97ffcc9890b434282063ca1ad3228de7
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
         ),
+        'Composer\\Pcre\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'PHPExcel' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
-            ),
         ),
     );
 
@@ -79,7 +74,6 @@ class ComposerStaticInit97ffcc9890b434282063ca1ad3228de7
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit97ffcc9890b434282063ca1ad3228de7::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit97ffcc9890b434282063ca1ad3228de7::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit97ffcc9890b434282063ca1ad3228de7::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit97ffcc9890b434282063ca1ad3228de7::$classMap;
 
         }, null, ClassLoader::class);
