@@ -248,7 +248,6 @@ class Dashboard extends Admin_Controller
     {
         $data['title'] = config_item('company_name');
         $data['page'] = lang('dashboard');
-        echo "<pre>"; print_r($data); die;
 
         $data['role'] = $this->session->userdata('user_type');
         $data['year'] = date('Y'); // get current year
